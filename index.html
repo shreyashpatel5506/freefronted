@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter page</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer="defer"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="signup">
+            <div class="detail">
+                <span class="titletex">Stay updated!</span>
+                
+                <span>Join 60,000+ product managers receiving monthly updates on:</span>
+                <div class="spec">
+                    <span><img src="icon-list.svg" alt="tick"></span>
+                    <span> Product discovery and building what matters</span>
+                </div>
+                <div class="spec">
+                    <span><img src="icon-list.svg" alt="tick"></span>
+                    <span> Measuring to ensure updates are a success</span>
+                </div>
+                <div class="spec">
+                    <span><img src="icon-list.svg" alt="tick"></span>
+                    <span>And much more!</span>
+                </div>
+
+                <div class="email">
+                    <span class="emailt"><span class="emaila">
+                        <span>Email-Address</span><span class="error" id="errorm">*please enter valid email</span>
+                        </span>
+    
+                        <input type="email" class="emailb" placeholder="email@company.com" id="emailv" required="'@','.'"><br>   
+                       
+                        <button type="submit" class="submit" id="sub" onclick="submit()">Subscribe to monthly newsletter</button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="image">
+                    <span><img src="illustration-sign-up-desktop.svg" alt="sucessimage"></span>
+            </div>
+        </div>
+
+        <div class="sucess">
+            <div class="cardsucess" id="sucess">
+                <span><img class=sucessimage src="icon-success.svg" alt="sucess"></span>
+                <span class="titletex" style="margin-left:0">
+                    Thanks for <br>subscribing!
+                </span>
+                <span class="para">
+                    A confirmation email has been sent to <b id="emailu"></b>. Please open it and click the button inside to confirm your subscription.
+                </span>
+
+                <div class="dismissbox">
+                    <button id="dismissb" onclick="dismiss()" class="dismiss">
+                        Dismiss
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
